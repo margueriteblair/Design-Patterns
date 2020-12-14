@@ -3,7 +3,7 @@ package main.java.com.starbuzz.Tezla;
 public class Reverse implements State{
     @Override
     public void accelerate() {
-
+        System.out.println("Car goes backwards!");
     }
 
     @Override

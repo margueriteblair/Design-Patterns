@@ -18,5 +18,17 @@ public class TezlaRoadster {
         currentState.openDoor();
     }
 
+    public void shiftToDrive() {
+        currentState = drive;
+
+    }
+    public void shiftToReverse() {
+        currentState = reverse;
+    }
+
+    public void shiftToParked() {
+        currentState = parked;
+    }
+
 
 }
