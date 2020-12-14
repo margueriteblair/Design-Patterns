@@ -3,8 +3,6 @@ package main.java.com.starbuzz.Tezla;
 //State pattern
 public class TezlaRoadster {
 
-    String[] state = {"Parked", "Drive", "Reverse"};
-
     public void accelerate() {
         System.out.println("Go.");
     }
