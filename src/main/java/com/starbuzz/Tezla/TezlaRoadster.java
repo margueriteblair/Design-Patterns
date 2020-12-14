@@ -11,7 +11,11 @@ public class TezlaRoadster {
     State currentState = parked;
 
     public void accelerate() {
-        System.out.println("Go.");
+        currentState.accelerate();
+    }
+
+    public void openDoor() {
+        currentState.openDoor();
     }
 
 
