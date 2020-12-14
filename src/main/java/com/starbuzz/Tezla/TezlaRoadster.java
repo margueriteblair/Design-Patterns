@@ -10,6 +10,10 @@ public class TezlaRoadster {
     State reverse = new Reverse();
     State currentState = parked;
 
+    public TezlaRoadster() {
+        this.currentState = parked;
+    }
+
     public void accelerate() {
         currentState.accelerate();
     }
