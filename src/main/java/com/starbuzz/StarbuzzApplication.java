@@ -1,13 +1,14 @@
-package com.starbuzz;
+package main.java.com.starbuzz;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
 public class StarbuzzApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(StarbuzzApplication.class, args);
+		Beverage order = new Americano();
+		order = new Mocha(order);
+
+		System.out.println(order.getDescription());
+		System.out.println(order.cost());
 	}
 
 }
